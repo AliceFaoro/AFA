@@ -1,0 +1,147 @@
+header {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(163, 222, 242);
+    padding: 15px;
+}
+
+#titolo {
+    color:white;
+    text-align: center;
+    text-shadow: 2px 2px 4px black;
+}
+
+#logo {
+    width: 170px;
+    border-radius: 500px;
+}
+
+body {
+    background-color: rgb(223, 240, 251);
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+   
+}
+
+button a {
+    text-decoration: none;
+    color:white;
+}
+
+button {
+    border-radius: 5px;
+    border: 1px solid rgb(58, 149, 180);
+    background-color: rgb(58, 149, 180);
+    padding: 5px;
+}
+
+.fa {
+    padding: 7px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 300px;
+    }
+
+footer {
+    text-align: center;
+}
+
+footer a {
+    margin: 10px;
+}
+
+main img {
+    width: 30vh;
+}
+
+main {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 70px;
+    text-align: center;
+}
+
+/* STILE PAGINA CONTATTI */
+
+form {
+    text-align: center;
+    border: 5px solid rgb(163, 222, 242);
+    width: 250px;
+    margin: 5vh auto;
+    border-radius: 10px;
+    padding: 5px;
+    height: 47%;
+}
+
+#contattaci {
+    text-align: center;
+}
+
+section {
+    display: flex;
+}
+
+section img {
+    width: 200px;
+    margin: 30px;
+}
+
+#foto1 {
+    flex-grow: 1;
+}
+
+#centrale {
+    flex-grow: 2;
+}
+
+#foto2 {
+    flex-grow:1;
+}
+
+
+/* MEDIA QUERIS */
+
+@media only screen and (max-width: 900px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    #logo {
+        display:block;
+        margin: 0 auto;
+        height: 60px;
+        width:60px;
+    }
+
+    #titolo {
+        font-size: 10px;
+        margin-top: 0;
+    }
+
+    #main1 {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+    nav {
+        margin-top: 30px;
+    }
+    #presentazione {
+        margin-top:0;
+    }
+    #corso {
+        margin-bottom: 0px;
+    }
+    section {
+        flex-direction: column;
+        text-align: center;
+    }
+    section img {
+        display: block;
+        margin: 10px auto;
+    }
+}
